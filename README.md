@@ -62,3 +62,33 @@ Horizontal lines indicate air pollution levels used for calculating air quality 
 
 **Heatmap of the feature correlation matrix**  
 Some features show high correlation -- I will remove those for the linear model to avoid multicollinearity.
+
+## Model Building
+
+I split the data into train and test sets with a test size of 20%.
+
+I tried linear regression and random forest models and evaluated them using .score() method, which shows the model accuracy.
+
+Multiple Linear Regression – baseline for the model.
+Random Forest – given data's sparsity, I thought that this would be the right choice.
+
+## Model Performance
+
+The Random Forest model outperformed the Linear Regression on the test set.
+
+Random Forest : accuracy score = 0.6976
+Linear Regression: accuracy score = 0.4305
+
+## Model Deployment
+
+In this step, I saved ("pickled") the model and wrote a python module. It can be called along with a list of weather data and date and return an estimated air pollution level (PM2.5).
+Data needed for the model:
+* temperature	
+* humidity
+*	pressure	
+*	windSpeed	
+*	visibility	
+*	windBearing	
+*	date and time
+I stick to this set of features, as they are easily accessible in any weather application. A random forest model with ozone levels produced a little higher accuracy, but I opted for the model's usability and dropped the feature.
+
