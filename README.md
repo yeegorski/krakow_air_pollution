@@ -69,15 +69,15 @@ I split the data into train and test sets with a test size of 20%.
 
 I tried linear regression and random forest models and evaluated them using .score() method, which shows the model accuracy.
 
-Multiple Linear Regression – baseline for the model.  
-Random Forest – given data's sparsity, I thought that this would be the right choice.
+**Multiple Linear Regression** – baseline for the model.  
+**Random Forest** – given data's sparsity, I thought that this would be the right choice.
 
 ## Model Performance
 
 The Random Forest model outperformed the Linear Regression on the test set.
 
-Random Forest : accuracy score = 0.6976
-Linear Regression: accuracy score = 0.4305
+**Random Forest:** accuracy score = 0.6976  
+**Linear Regression:** accuracy score = 0.4305
 
 ## Model Deployment
 
