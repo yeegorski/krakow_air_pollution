@@ -89,6 +89,12 @@ Data needed for the model:
 *	windSpeed	
 *	visibility	
 *	windBearing	
-*	date and time
+*	date and time  
 I stick to this set of features, as they are easily accessible in any weather application. A random forest model with ozone levels produced a little higher accuracy, but I opted for the model's usability and dropped the feature.
 
+
+## Some Insights from the Data
+* More polluted air comes in winter, as many Polish homes are still heated with coal and wood. 
+* The air quality in Krakow tends to get worse when the wind is blowing from the west. That is where the Silesia region is located - the Polish coal mining hub.
+* The most smog is usually coming in the morning hours (from midnight till 6 am), following the day's coldest hours.
+* Pressure might alleviate the smog burden or reinforce it depending on where the wind is blowing from. Low pressure and the west wind might cause more air pollution than high pressure and the wind from the same direction. 
