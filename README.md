@@ -9,7 +9,7 @@ This project is dedicated to the air pollution levels in Krakow, Poland. Polish 
 
 ## Code and Resources Used
 **Python Version:** 3.7  
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, sklearn, json, pickle  
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, sklearn, requests, json, pickle  
 **Historical Weather Data:** https://www.getambee.com/api-documentation.  
 **PM2.5 Data:** https://powietrze.gios.gov.pl/pjp/current/station_details/archive/400.  
 **WHO Air Quality Guidelines:** https://apps.who.int/iris/bitstream/handle/10665/69477/WHO_SDE_PHE_OEH_06.02_eng.pdf?sequence=1.  
