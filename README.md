@@ -41,3 +41,6 @@ After scraping the data, I needed to clean it up to be usable for the model. I m
 * removed *PM2.5* outliers from the dataset
 * dropped rows with unknown values (*pressure*, *windGust*)
 * created features *month*, *hour*, and *weekday* from *time* feature,then based on those features created dummy variables for seasons, parts of the day, and workdays/weekends
+
+## EDA
+
