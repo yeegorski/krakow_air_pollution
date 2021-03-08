@@ -43,4 +43,16 @@ After scraping the data, I needed to clean it up to be usable for the model. I m
 * created features *month*, *hour*, and *weekday* from *time* feature,then based on those features created dummy variables for seasons, parts of the day, and workdays/weekends
 
 ## EDA
+![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/PM2.png "Pollution levels 2019-2020, PM2.5")
 
+Pollution levels 2019-2020, PM2.5  
+Horizontal lines indicate air pollution levels used for calculating air quality index:
+* green - healthy
+* yellow - moderate
+* orange - unhealthy for sensitive groups
+* red - unhealthy
+* purple - hazardous
+
+![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/temperature.png "Temperature levels 2019-2020, degrees Celsius")
+
+Temperature levels 2019-2020, degrees Celsius, with gradient showing the PM2.5 levels
