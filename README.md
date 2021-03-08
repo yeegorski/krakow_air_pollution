@@ -2,7 +2,7 @@
 This project is dedicated to the air pollution levels in Krakow, Poland. Polish cities rank high in various researches on air quality in Europe. According to the Swiss air monitoring platform IQAir, Krakow takes 29th place in Europe's most polluted cities 2019 [ranking](https://www.iqair.com/world-most-polluted-cities?continent=59af92ac3e70001c1bd78e52&country=&state=&page=1&perPage=50&cities=). **Using weather conditions, the model predicts the level of very fine particulate matter known as PM2.5, a pollutant posing the greatest health risk.**
 
 * Scraped Krakow weather data from 2019 and 2020 and PM2.5 data
-* Performed data preprocessing (coped with missing data, transformed categorical features, scaled the data, removed the outliers, engineered new features)
+* Performed data preprocessing  (coped with missing data, transformed categorical features, scaled the data, removed the outliers, engineered new features, checked for multicollinearity)
 * Performed exploratory data analysis
 * Created and evaluated models with sklearn's LinearRegression and RandomForests
 * Created a python module on the model with the best performance
@@ -45,7 +45,7 @@ After scraping the data, I needed to clean it up to be usable for the model. I m
 ## EDA
 ![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/PM2.png "Pollution levels 2019-2020, PM2.5")
 
-Pollution levels 2019-2020, PM2.5  
+**Pollution levels 2019-2020, PM2.5**   
 Horizontal lines indicate air pollution levels used for calculating air quality index:
 * green - healthy
 * yellow - moderate
@@ -55,4 +55,10 @@ Horizontal lines indicate air pollution levels used for calculating air quality 
 
 ![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/temperature.png "Temperature levels 2019-2020, degrees Celsius")
 
-Temperature levels 2019-2020, degrees Celsius, with gradient showing the PM2.5 levels
+**Temperature levels 2019-2020, degrees Celsius, with gradient showing the PM2.5 levels**
+
+
+![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/corr_matrix.png "Heatmap of the feature correlation matrix")
+
+**Heatmap of the feature correlation matrix**  
+Some features show high correlation -- I will remove those for the linear model to avoid multicollinearity.
