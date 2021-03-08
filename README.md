@@ -4,7 +4,7 @@ This project is dedicated to the air pollution levels in Krakow, Poland. Polish 
 * Scraped Krakow weather data from 2019 and 2020 and PM2.5 data
 * Performed data preprocessing  (coped with missing data, transformed categorical features, scaled the data, removed the outliers, engineered new features, checked for multicollinearity)
 * Performed exploratory data analysis
-* Created and evaluated models with sklearn's LinearRegression and RandomForests
+* Created and evaluated models with sklearn's LinearRegression and RandomForest  
 * Created a python module on the model with the best performance
 
 ## Code and Resources Used
