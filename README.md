@@ -46,7 +46,7 @@ After scraping the data, I needed to clean it up to be usable for the model. I m
 ![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/PM2.png "Pollution levels 2019-2020, PM2.5")
 
 **Pollution levels 2019-2020, PM2.5**   
-Horizontal lines indicate air pollution levels used for calculating air quality index:
+Horizontal lines indicate upper bounds of the air pollution levels used for calculating air quality index:
 * green - healthy
 * yellow - moderate
 * orange - unhealthy for sensitive groups
