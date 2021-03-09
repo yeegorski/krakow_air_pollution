@@ -7,7 +7,7 @@ This project is dedicated to the air pollution levels in Krakow, Poland. Polish 
 * Created and evaluated models with sklearn's LinearRegression and RandomForest  
 * Created a python module on the model with the best performance
 
-## Code and Resources Used
+## Resources Used
 **Python Version:** 3.7  
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, sklearn, requests, json, pickle  
 **Historical Weather Data:** https://www.getambee.com/api-documentation.  
@@ -38,15 +38,13 @@ After scraping the data, I needed to clean it up to be usable for the model. I m
 * substituted missing *ozone* values in 2019 with values from 2020 after having checked that they are reasonably close for other dates
 * turned *windBearing* into dummy variables, as it indicated the wind direction (north, east, south, and west)
 * merged the weather data with the air pollution data
-* removed *PM2.5* outliers from the dataset
-* dropped rows with unknown values (*pressure*, *windGust*)
-* created features *month*, *hour*, and *weekday* from *time* feature,then based on those features created dummy variables for seasons, parts of the day, and workdays/weekends
+* created features *month*, *hour*, and *weekday* from *time* feature
 
 ## EDA
 ![alt text](https://github.com/yeegorski/krakow_air_pollution/blob/main/PM2.png "Pollution levels 2019-2020, PM2.5")
 
 **Pollution levels 2019-2020, PM2.5**   
-Horizontal lines indicate upper bounds of the air pollution levels used for calculating air quality index:
+Horizontal lines indicate the upper bounds of the air pollution levels used for calculating air quality index:
 * green - healthy
 * yellow - moderate
 * orange - unhealthy for sensitive groups
@@ -98,3 +96,9 @@ I stick to this set of features, as they are easily accessible in any weather ap
 * The air quality in Krakow tends to get worse when the wind is blowing from the west. That is where the Silesia region is located - the Polish coal mining hub.
 * The most smog is usually coming in the morning hours (from midnight till 6 am), following the day's coldest hours.
 * Pressure might alleviate the smog burden or reinforce it depending on where the wind is blowing from. Low pressure and the west wind might cause more air pollution than high pressure and the wind from the same direction. 
+
+
+## Implications and Model Application
+The model can be used to predict air pollution degrees based on weather data. It can be both useful on individual and public levels.
+* The model can be integrated into weather apps and notify users about upcoming air quality.
+* On the public level, the model can be used to protect citizens' health by informing about pollution levels and taking measures before air quality deteriorates (free public transportation, subsidies for bike-riding, or walking instead of driving). 
